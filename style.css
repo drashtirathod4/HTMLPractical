@@ -1,0 +1,325 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header Section */
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #2874f0;
+    width: 100%;
+    height: 56px;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+.header-left {
+    width: 20%;
+    text-align: right;
+    margin: 5px 0px;
+    cursor: pointer;
+}
+
+.header-left a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 1.5px;
+}
+
+.header-left-p a {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+}
+
+.header-left-p span {
+    color: yellow;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.header-left-p:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.header-center {
+    width: 40%;
+    text-align: left;
+    line-height: 50px;
+    cursor: pointer;
+    padding-left: 10px;
+    position: relative;
+}
+
+.header-center-input {
+    height: 36px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.fa-search {
+    position: absolute;
+    top: 30%;
+    left: 94%;
+    font-size: 18px;
+    color: #2874f0;
+}
+
+.header-right {
+    padding-left: 30px;
+    width: 40%;
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-start;
+    text-transform: capitalize;
+    line-height: 50px;
+}
+
+.header-right a {
+    text-decoration: none;
+    color: white;
+    margin: 0px 18px;
+}
+
+.header-right .active { 
+    background-color: white;
+    color: #2874f0;
+    padding: 5px 30px;
+    height: 35px;
+    width: 130px;
+    line-height: 23px;
+    margin-top: 8px;
+    border-radius: 2px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.header-right .active:hover {
+    background-color: ghostwhite;
+    transition: 50ms;
+    transform: scale(0.9);
+}
+
+.fa-shopping-cart {
+    padding-right: 10px;
+}
+
+.fa-angle-down {
+    padding-left: 5px;
+}
+
+/* Category Section */
+
+.category-row {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    text-align: center;
+    padding-bottom: 10px;
+    box-shadow: 2px 2px #c7c2c269;
+}
+
+.category-col {
+    padding: 4px 0px;
+    margin-left: -120px;
+    cursor: pointer;
+    color: black;
+}
+
+.category-col img {
+    width: 66px;
+    height: 66px;
+}
+
+.category-col h5:hover {
+    color: #2874f0;
+}
+
+/* Mobile Section */
+
+.product-section {
+    background: rgba(219, 219, 224, 0.384);
+    padding-top: 20px;
+    width: 100%;
+    float: left;
+}
+
+.card-products {
+    background-color: white;
+    padding: 0px 0px;
+    margin-left: 100px;
+    margin-right: 10px;
+    border-radius: 0px;
+    width: 67%;
+    float: left;
+}
+
+.card {
+    background-color: white;
+    padding: 0px 0px;
+    margin: 0px 100px;
+    border-radius: 0px;
+}
+
+.advertise {
+    width: 10%;
+    float: left;
+    padding-left: 0px;
+    margin-right: 0px;
+}
+
+.advertise img {
+    width: 215px;
+    height: 338px;
+    box-shadow: 3px 2px #c7c2c269;
+}
+
+.products {
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 3px 4px #c7c2c269;
+}
+
+.common-heading {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 /16%);
+}
+
+.common-heading-left h1 {
+    font-size: 20px;
+    font-weight: 400;
+    padding:auto;
+}
+
+.common-heading-left h2{
+    font-size: 15px;
+    padding: 5px 0px;
+    color: rgb(145,141,138) ;
+    font-weight: 200;
+}
+
+.common-heading-left i {
+    font-size: 18px;
+    padding-left: 10px;
+    color: rgb(145,141,138) ;
+    font-weight: 200;
+}
+
+.common-heading-right button {
+    width: 75px;
+    height: 35px;
+    font-size: 14px;
+    background-color: #2874f0;
+    border: none;
+    color: white;
+    border-radius: 2px;
+    text-transform: uppercase;
+}
+
+.common-heading-right button:hover {
+    background-color: #2875f0e7;
+    transition: 50ms;
+    transform: scale(0.9);
+}
+
+.common-row {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    max-height: 366px;
+    margin: 20px 0px;
+}
+
+.common-col {
+    text-align: center;
+    line-height: 22px;
+}   
+
+.common-col img {
+    width: 69px;
+    height: 150px;
+    transition: 300ms;
+}
+
+.common-col img:hover {
+    transform: scale(0.9);
+}
+
+.common-col h3,h4,h6 {
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.common-col h3 {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.common-col h4 {
+    color: green;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.common-col h6 {
+    color: rgb(161,161,161);        
+    font-size: 12px;
+    font-weight: 100;
+}
+
+/* Headphones and speaker section */
+.col-headphones img {
+    width: 125px;
+    height: 150px;
+}
+
+/* css for slider arrows */
+
+#rightarrow,
+#leftarrow {
+  width: 30px;
+  display: inline-block;
+  padding-top: 53px;
+}
+
+#leftarrow button,
+#rightarrow button {
+  font-size: 20px;
+  font-weight: bold;
+  height: 60px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  width: 30px;
+  box-shadow: 1px 2px 3px 1px rgb(216, 215, 215);
+}
+
+#leftarrow button:hover,
+#rightarrow button:hover {
+  background-color: rgb(247, 241, 241);
+}
+
+.new-ad {
+    margin-top: -3rem;
+    box-shadow: 1px 2px 4px 0 rgb(150, 147, 147);
+    width: 20px;
+    height: 30px;
+    background-color: rgb(248, 244, 244);
+}
